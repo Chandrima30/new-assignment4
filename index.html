@@ -10,7 +10,7 @@
    <div class="max-w-6xl mx-auto">
     <h1 class="text-2xl font-bold mb-6">Job Application Tracker</h1>
 
-    <div  class="grid md:grid-cols-3 gap-5 mb-8">
+    <div  class="grid md:grid-cols-3 border gap-5 mb-8">
         <div class="bg-white p-5 rounded ">
             <p>Total</p>
             <h2  id="totalCount" class="text-2xl font-bold">0</h2>
@@ -24,8 +24,293 @@
             <h2  id="rejectedCount" class="text-2xl font-bold text-red-500">0</h2>
         </div>
     </div>
-    
-   </div>
+
+  
+
+    <div >
+  <hr class="my-5">
+
+     <div class="flex justify-between mb-4">
+     <h2 class="font-semibold text-lg">Available Jobs</h2>
+     <span id="tabCount">0 jobs</span>
+      </div>
+
+     <div class="flex gap-2 mb-6">
+     <button class="tab bg-blue-500 text-white px-6 py-2  rounded" data-tab="All">All</button>
+     <button class="tab bg-gray-50 border px-6 py-2  rounded" data-tab="Interview">Interview</button>
+     <button class="tab bg-gray-50  border px-6 py-2 rounded" data-tab="Rejected">Rejected</button>
+     </div>
+
+     <div id="jobList" class="space-y-4">
+
+
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">Mobile First Corp</h3>
+<p class="text-sm text-gray-600">React Native Developer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+Remote • Full-time • $130,000 - $175,000
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Build cross-platform mobile applications using React Native.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">WebFlow Agency</h3>
+<p class="text-sm text-gray-600">Web Designer & Developer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+Los Angeles, CA •Part-time • $80,000 - $120,000</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">DataViz Solutions</h3>
+<p class="text-sm text-gray-600">Data Visualization Specialist</p>
+
+<p class="text-sm text-gray-400 mb-3">Boston, MA 
+•
+ Full-time
+ •
+ $125,000 - $165,000
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">CloudFirst Inc</h3>
+<p class="text-sm text-gray-600">Backend Developer</p>
+
+<p class="text-sm text-gray-400 mb-3">Seattle, WA
+ •
+ Full-time
+ •
+ $140,000 - $190,000
+
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">Innovation Labs</h3>
+<p class="text-sm text-gray-600">UI/UX Engineer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+Austin, TX
+ •
+ Full-time
+ •
+ $110,000 - $150,000
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">MegaCorp Solutions</h3>
+<p class="text-sm text-gray-600">JavaScript Developer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+New York, NY
+ • 
+Full-time 
+•
+ $130,000 - $170,00
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">StartupXYZ</h3>
+<p class="text-sm text-gray-600">Full Stack Engineer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+Remote
+ • 
+Full-time 
+•
+ $120,000 - $160,000
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+     <div class="jobCard bg-white border rounded-lg p-5 relative"data-status="All">
+
+<button class=" delete absolute right-4 top-4 border p-2">delete</button>
+
+<h3 class="font-bold">TechCorp Industries</h3>
+<p class="text-sm text-gray-600">Senior Frontend Developer</p>
+
+<p class="text-sm text-gray-400 mb-3">
+San Francisco, CA
+ • 
+Full-time 
+•
+ $130,000 - $175,000
+</p>
+
+<span class="statusBadge bg-gray-200 text-xs px-2 py-1 rounded">
+NOT APPLIED
+</span>
+
+<p class="text-sm my-4">
+We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+</p>
+
+<div class="flex gap-3">
+<button class="interview border border-green-500 text-green-500 px-3 py-1 rounded text-sm">
+INTERVIEW
+</button>
+
+<button class="reject border border-red-500 text-red-500 px-3 py-1 rounded text-sm">
+REJECTED
+</button>
+</div>
+   
+     </div>
+       
+
+      
+
+     </div>
 
     <script src="./script.js"></script>
 </body>
